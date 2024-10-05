@@ -1,0 +1,80 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 2em;
+    padding: 20px;
+    background-color: rgb(140, 2, 2);
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2em;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.4em;
+}
+
+div input{
+    width: 500px;
+    height: 30px;
+    font-size: large;
+    transition: width 0.2s ease-out;
+}
+
+div textarea{
+    width: 500px;
+    height: 50px;
+    font-size: large;
+    transition: width 0.2s ease-out;
+}
+
+div input:focus{
+    outline-style:solid;
+    outline-color: white;    
+}
+
+div textarea:focus{
+    outline-style:solid;
+    outline-color: white;    
+}
+
+.btnSubmit{
+    background-color: rgb(255, 0, 0);
+    outline: none;
+    color: white;
+    border: none;
+    width: 500px;
+    transition: width 0.2s ease-out;
+    height: 30px;
+}
+
+.btnSubmit:hover{
+    background-color: rgb(251, 85, 85);
+}
+.btnSubmit:focus{
+    outline: none;
+}
+
+
+@media screen and (max-width:600px){
+    div input{
+        width: 300px;
+        transition: width  0.2s ease-in;
+    }
+    
+    div textarea{
+        width: 300px;
+        transition: width  0.2s ease-in;
+    }
+    .btnSubmit{
+        width: 300px;
+        transition: width  0.2s ease-in;
+    }
+}

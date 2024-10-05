@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Product</title>
+    <link rel="stylesheet" href="../style/index-style.css">
+    <link rel="stylesheet" href="../style/form-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"><img src="../images/logo.jpg" alt=""></a>
+            <ul>
+                <li><a href="./form.html" id="form">Add Product</a></li>
+                <li><a href="./products.html" id="products">View Products</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="add-product-heading">Add Product</h2>
+        <form id="frmProduct">
+            <div>
+                <label for="productName">Product</label>
+                <input type="text" name="product" id="productName">
+            </div>
+            <div>
+                <label for="productCost">Cost</label>
+                <input type="number" name="cost" id="productCost" min="0">
+            </div>
+            <div>
+                <label for="productDescription">Description</label>
+                <textarea name="description" id="productDescription"></textarea>
+            </div>
+            <div>
+                <label for="productQuantity">Quantity</label>
+                <input type="number" name="quantity" id="productQuantity" min="0">
+            </div>
+            <div class="btn">
+                <button type="submit" class="btnSubmit" value="insert">Add Product</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>© Copyright 2024 | Konstantinos Veloutsos</p>
+        <p><a href="https://github.com/kostasbel96" target="_blank"><i class="fa-brands fa-github"></i></a></p>
+    </footer>
+    <script
+        src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+        crossorigin="anonymous">
+    </script> 
+    <script src="../js/products.scripts.js"></script>
+</body>
+</html>
