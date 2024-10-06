@@ -9,7 +9,10 @@
 
 3. Run the project: Start the Node.js application with:
     node index.js
-4. Open a browser and type http://localhost:3000/
+
+4. Copy connection string of mongodb to .env file as MONGODB_URI   
+
+5. Open a browser and type http://localhost:3000/
    
 
 Make sure Node.js is installed on your system.
