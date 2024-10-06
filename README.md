@@ -9,5 +9,7 @@
 
 3. Run the project: Start the Node.js application with:
     node index.js
+4. Open a browser and type http://localhost:3000/
+   
 
 Make sure Node.js is installed on your system.
